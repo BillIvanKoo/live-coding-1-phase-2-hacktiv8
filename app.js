@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost/livecode1phase2');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var foods = require('./routes/foods');
-var restaurant = require('./routes/restaurants');
+var restaurants = require('./routes/restaurants');
 
 var app = express();
 
