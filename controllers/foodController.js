@@ -36,7 +36,7 @@ updateFood = (req, res) => {
     if (err) res.send(err)
     food.name= req.body.name || food.name;
     food.price= req.body.price || food.price;
-    food.expired_date= new Date(req.body.expired_date) || food.expired_date;
+    food.expired_date= new Date(req.body.expired_date) || Date(food.expired_date);
     food.save((err, food)=>{
       if (err) res.send(err)
       res.send(food)
